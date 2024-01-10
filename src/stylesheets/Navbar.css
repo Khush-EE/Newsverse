@@ -1,0 +1,140 @@
+:root {
+    --color: #ff5d5d;
+    --bg: #131b25;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--bg);
+    color: white;
+
+}
+
+header nav {
+    width: 50%;
+    height: 100%;
+    font-size: 1.1em;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: inherit;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    font-size: inherit;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: var(--color); cursor: pointer; color: black;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: var(--bg); color: var(--color); cursor: pointer;}
+
+  .active {color: var(--color);}
+
+  .dropdown-content a.navActive {background-color: var(--color); cursor: pointer; color: black;}
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+header nav ul li {
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul li a.active {
+    /* text-decoration: underline; */
+    color: var(--color);
+}
+
+header nav ul li:hover {
+    color: var(--color);
+}
+
+header h1 {
+    margin: 0 2%;
+    color: var(--color);
+}
+
+.searchbar {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbar input {
+    width: 65%;
+    height: 40%;
+    border-radius: 2px;
+    border: 2px solid white;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.searchbar button {
+    width: 20%;
+    height: 45%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: var(--color);
+    border: inherit;
+    margin-right: 5%;
+}
